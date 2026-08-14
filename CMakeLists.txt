@@ -56,7 +56,9 @@ ADD_DEFINITIONS(-D_UNICODE)
 
 #################################################
 
-add_subdirectory(mdns_cpp)
+if (BUILD_MVR_XCHANGE)
+    add_subdirectory(mdns_cpp)
+endif()
 
 #################################################
 # create the project
